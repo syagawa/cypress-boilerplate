@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "es2015": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "xhr": true,
+    "Promise": true,
+    "cy": true,
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "before": true,
+    "after": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "context": true,
+    "Cypress": true
+  },
+  "plugins": [],
+  "rules": {
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "semi": ["error", "always"],
+    "semi-spacing": ["error", {"after": true, "before": false}],
+    "semi-style": ["error", "last"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+    "curly": 2
+  }
+}
+
